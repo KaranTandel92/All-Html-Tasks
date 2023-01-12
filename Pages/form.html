@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission form</title>
+</head>
+
+<body>
+    <!--Use school logo and nav inside of header-->
+    <header>
+        <h1>Himalyan Public School</h1>
+        <img src="../Assests/Image/Himalyan school logo.jpg" alt="school logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Adress</a></li>
+                <li><a href="#">Subjects</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--header section end here-->
+    <!--I have to start main form from here-->
+    <main>
+        <form>
+            <h3>ADMISSION FORM</h3>
+            <fieldset>
+                <legend><strong>Personal Details :</strong></legend><br>
+                <label for="student">Student Name :-</label>
+                <!--Use two time breake tag for looking good-->
+                <input type="text" id="student" name="student" placeholder="Enter full name" required><br><br>
+                <label for="age">Age :-</label>
+                <input type="text" id="age" name="age" placeholder="Student age" required><br><br>
+                <!--Using date value inside of type atrribute for date selection-->
+                <label for="birthdate">Birth Date :-</label>
+                <input type="date" id="birthdate" required><br><br>
+                <label for="father">Father Name :-</label>
+                <input type="text" id="father" name="father" placeholder="Father first name only"><br><br>
+                <label for="mother">Mother Name :-</label>
+                <input type="text" id="mother" name="mother" placeholder="Mother first name only"><br><br>
+                <span>Address :-</span>
+                <!--Use textarea for writing an address of student-->
+                <textarea name="Description" id="Description" cols="40" rows="7" placeholder="Home address..."
+                    required></textarea><br><br>
+                <!--Using a tel value inside of type attributes for type cellphone number-->
+                <label for="phone">Enter phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 1234567890"><br>
+                <small>Format : +91 9999888800</small>
+                <p><strong>Gender</strong></p>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br><br>
+            </fieldset><br>
+            <fieldset>
+                <legend><strong>School requirements :</strong></legend><br>
+                <label for="standard">Select your class</label>
+                <!---This is my SELECT section-->
+                <select name="standard" id="standard">
+                    <option value="Eight">8</option>
+                    <option value="Nine">9</option>
+                    <option value="Ten">10</option>
+                </select><br><br>
+                <!--End SELECT section here-->
+                <p><strong>Select your subject</strong></p>
+                <!--Here start my checkbox portion-->
+                <input type="checkbox" id="hindi" name="hindi">
+                <label for="hindi">Hindi</label>
+                <input type="checkbox" id="computer" name="computer">
+                <label for="computer">Computer</label>
+                <input type="checkbox" id="sanskrit">
+                <label for="sanskrit">Sanskrit</label><br><br>
+                <!--End checkbox portion-->
+                <!--This section for choosing the student documents-->
+                <label for="file">Choose file</label>
+                <input type="file" id="file"><br><br>
+            </fieldset><br>
+            <!--Using submit value for submit the fill up form of student-->
+            <input type="submit" value="submit">
+        </form>
+    </main><br>
+    <!--Start footer here for school facilities-->
+    <footer>
+        <div>Facilities in our school</div>
+        <nav>
+            <ul>
+                <li>Prayer hole</li>
+                <li>Play ground</li>
+                <li title="Reading books for students">Library</li>
+                <li>computer class</li>
+                <li>Science leboratory</li>
+                <li>Sport coach</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
